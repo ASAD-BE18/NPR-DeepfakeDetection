@@ -23,22 +23,22 @@ def seed_torch(seed=1029):
     torch.backends.cudnn.enabled = False
 seed_torch(100)
 DetectionTests = {
-                'ForenSynths': { 'dataroot'   : '/opt/data/private/DeepfakeDetection/ForenSynths/',
+                'ForenSynths': { 'dataroot'   : './dataset/ForenSynths',
                                  'no_resize'  : False, # Due to the different shapes of images in the dataset, resizing is required during batch detection.
                                  'no_crop'    : True,
                                },
 
-           'GANGen-Detection': { 'dataroot'   : '/opt/data/private/DeepfakeDetection/GANGen-Detection/',
+           'GANGen-Detection': { 'dataroot'   : './dataset/GANGen-Detection',
                                  'no_resize'  : True,
                                  'no_crop'    : True,
                                },
 
-         'DiffusionForensics': { 'dataroot'   : '/opt/data/private/DeepfakeDetection/DiffusionForensics/',
+         'DiffusionForensics': { 'dataroot'   : './dataset/DiffusionForensics',
                                  'no_resize'  : False, # Due to the different shapes of images in the dataset, resizing is required during batch detection.
                                  'no_crop'    : True,
                                },
 
-        'UniversalFakeDetect': { 'dataroot'   : '/opt/data/private/DeepfakeDetection/UniversalFakeDetect/',
+        'UniversalFakeDetect': { 'dataroot'   : './dataset/UniversalFakeDetect',
                                  'no_resize'  : False, # Due to the different shapes of images in the dataset, resizing is required during batch detection.
                                  'no_crop'    : True,
                                },
