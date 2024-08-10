@@ -10,7 +10,9 @@ from options.test_options import TestOptions
 import networks.resnet as resnet
 import numpy as np
 import random
-import random
+import warnings
+warnings.filterwarnings("ignore")
+
 def seed_torch(seed=1029):
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
