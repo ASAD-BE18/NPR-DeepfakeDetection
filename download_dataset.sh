@@ -34,12 +34,13 @@ cd ./DiffusionForensics
 ls | xargs -I pa sh -c "tar -zxvf pa; rm pa"
 cd $pwd/dataset
 
-# https://github.com/Ekko-zn/AIGCDetectBenchmark
-# https://drive.google.com/drive/folders/1BUv1MT1cm90QN3WTMHLEr8PXBsKGxKC9?usp=sharing
-gdown https://drive.google.com/drive/folders/1BUv1MT1cm90QN3WTMHLEr8PXBsKGxKC9 -O ./AIGCDetect_testset --folder
-zip -s- test.zip -O test_full.zip
-unzip test_full.zip -d ./AIGCDetect_testset
-cd $pwd/dataset
+# AIGC test set is not available
+# # https://github.com/Ekko-zn/AIGCDetectBenchmark
+# # https://drive.google.com/drive/folders/1BUv1MT1cm90QN3WTMHLEr8PXBsKGxKC9?usp=sharing
+# gdown https://drive.google.com/drive/folders/1BUv1MT1cm90QN3WTMHLEr8PXBsKGxKC9 -O ./AIGCDetect_testset --folder
+# zip -s- test.zip -O test_full.zip
+# unzip test_full.zip -d ./AIGCDetect_testset
+# cd $pwd/dataset
 
 gdown https://drive.google.com/drive/folders/14f0vApTLiukiPvIHukHDzLujrvJpDpRq -O ./Diffusion1kStep --folder
 cd ./Diffusion1kStep
