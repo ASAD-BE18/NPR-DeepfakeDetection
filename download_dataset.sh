@@ -9,7 +9,10 @@ cd dataset
 
 # --proxy http://ip:port
 
-
+gdown https://drive.google.com/drive/folders/14f0vApTLiukiPvIHukHDzLujrvJpDpRq -O ./Diffusion1kStep --folder
+cd ./Diffusion1kStep
+ls | xargs -I pa sh -c "tar -zxvf pa; rm pa"
+cd $pwd/dataset
 
 # https://github.com/Yuheng-Li/UniversalFakeDetect
 # https://drive.google.com/drive/folders/1nkCXClC7kFM01_fqmLrVNtnOYEFPtWO-
@@ -41,11 +44,6 @@ cd $pwd/dataset
 # zip -s- test.zip -O test_full.zip
 # unzip test_full.zip -d ./AIGCDetect_testset
 # cd $pwd/dataset
-
-gdown https://drive.google.com/drive/folders/14f0vApTLiukiPvIHukHDzLujrvJpDpRq -O ./Diffusion1kStep --folder
-cd ./Diffusion1kStep
-ls | xargs -I pa sh -c "tar -zxvf pa; rm pa"
-cd $pwd/dataset
 
 
 # https://github.com/peterwang512/CNNDetection
